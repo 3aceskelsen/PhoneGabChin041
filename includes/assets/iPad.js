@@ -5,8 +5,8 @@ var isiPhone = navigator.userAgent.indexOf('iPhone') != -1;
 
 $(document).ready(function(){							
 	$(function() {
-		$.stayInWebApp();		
-		displayAddToHomescreen();
+		//$.stayInWebApp();		
+		//displayAddToHomescreen();
 	});
 	
 	/*The left scroll is only needed on iPad because of the break in display upon rotation. But if used on iPhone, scrolling don't function vertically.*/
