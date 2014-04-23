@@ -65,10 +65,10 @@ var playButtonHandler = function(event) {
 	}
 }
 //need these variable to be global to access from the application cache
-var percentLoadedHolder = $("<div></div>");
+/*var percentLoadedHolder = $("<div></div>");
 percentLoadedHolder.attr("id", "percent-loaded-holder");
 var percentLoaded = $("<div>&nbsp;</div>");
-percentLoaded.attr("id", "percent-loaded");
+percentLoaded.attr("id", "percent-loaded");*/
 
 var playButton = $("<span>2</span>");
 playButton.attr("id", "play-button");
@@ -143,7 +143,7 @@ var displayLesson = function(displayArray){
 				/*$("#chinese-character").append(playNotReady);*/
 				$("#chinese-character").parent().bind(bindEvents, playButtonHandler);
 				//these perecent holders are for the cache loading display.
-				if (appCache.status != appCache.IDLE) {
+				/*if (appCache.status != appCache.IDLE) {
 					
 					percentLoadedHolder.css({
 						'background-color':	'white',
@@ -173,13 +173,13 @@ var displayLesson = function(displayArray){
 					playButton.append(percentLoadedHolder);
 				} else {
 					percentLoadedHolder.remove();
-				}
+				}*/
 			}
-			if (appCache.status == appCache.IDLE) {
+			/*if (appCache.status == appCache.IDLE) {
 				percentLoadedHolder.remove(); //not sure that its necessary to have this.
 				//playButton.remove(percentLoadedHolder);
 				IsLog.c('removed the loader');
-			}
+			}*/
 			//	End custom logic for the vocab page.
 			$(jplayerElementId).attr("audio-file-path", $(this).attr("audio-file-path"));
 			//	The start time and end times will change each time we "load" a new character. The mp3 should remain and the file should play immediately (if it hasn't changed).
