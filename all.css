@@ -112,18 +112,18 @@ footer {
 															/* Page-specific Layout/style Landscape*/
 	/*home landscape*/
 .home_main {
-	margin-top: 2em;
+	margin-top: 3em;
 }
 .home_main p {
 	font-size: 1em;
 }
 											/*help page*/
 .help_page {
-	margin-top: 2.2em;
+	margin-top: 3.2em;
 	margin-bottom: 3.2em;
 }
 .help_page h3 {
-	padding-left: .2em;	
+	padding-left: .2em;
 }
 .help_page p {
 	padding-left: .45em;
@@ -290,7 +290,7 @@ select {
 }
 	/*contact us landscape*/
 .contact_contact-us { 
-	margin-top: 2.5em;
+	margin-top: 3.5em;
 	margin-left: 2.564%;
 	margin-right: 5%;
 }
